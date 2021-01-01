@@ -132,9 +132,9 @@ function(a,b,c,d){var e=function(b){this._core=b,this._timeout=null,this._paused
 		    }
 		})
 
-	    $('.testi-carousel').owlCarousel({
+$('.testi-carousel').owlCarousel({
             loop:true,
-            margin:30,
+            margin:10,
             dots:true,
             nav: true,
             responsiveClass:true,
@@ -157,6 +157,36 @@ function(a,b,c,d){var e=function(b){this._core=b,this._timeout=null,this._paused
                 },
 				1200:{
                     items:2,
+                    loop:true
+                }
+            }
+        })
+
+	    $('.blog-carousel').owlCarousel({
+            loop:true,
+            margin:20,
+            dots:true,
+            nav: true,
+            responsiveClass:true,
+            navText: [
+               "<i class='fa fa-angle-left effect-1'></i>",
+               "<i class='fa fa-angle-right effect-1'></i>"
+            ],
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:2,
+                    nav:true
+                },
+                1000:{
+                    items:3,
+                    loop:true
+                },
+				1200:{
+                    items:3,
                     loop:true
                 }
             }
