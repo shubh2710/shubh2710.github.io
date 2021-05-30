@@ -192,6 +192,24 @@ $('.testi-carousel').owlCarousel({
             }
         })
 
+$('.rec-carousel').owlCarousel({
+    loop:true,
+    margin:20,
+    dots:true,
+    nav: true,
+    responsiveClass:true,
+    navText: [
+        "<i class='fa fa-angle-left effect-1'></i>",
+        "<i class='fa fa-angle-right effect-1'></i>"
+    ],
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        }
+    }
+})
+
 	    $('.owl-screenshots').owlCarousel({
            loop:false,
             margin:30,
